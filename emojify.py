@@ -6,8 +6,8 @@ from random import random
 
 
 def emojify(c):
-    f = open('emoji.json')
-    d = json.load(f)
+    file = open('emoji.json')
+    d = json.load(file)
     p = c.split(' ')
     es = []
     for e in d:
