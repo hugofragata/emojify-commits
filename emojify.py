@@ -9,6 +9,7 @@ def emojify(c):
     file = open('emoji.json')
     d = json.load(file)
     p = c.split(' ')
+    l = c.split('\n')[0]
     es = []
     for e in d:
         for w in p:
@@ -18,10 +19,10 @@ def emojify(c):
                 es.append(e['emoji'])
     if es != []:
         for e in es:
-            c += ' '+e
+            l += ' '+e
     else:
-        c += ' '+d[int(random() * (len(d)-1))]['emoji']+' '+d[int(random() * (len(d)-1))]['emoji']
-    return c
+        l += ' '+d[int(random() * (len(d)-1))]['emoji']+' '+d[int(random() * (len(d)-1))]['emoji']
+    return l
 
 
 def append_to_file():
