@@ -6,7 +6,7 @@ from random import random
 
 
 def emojify(c):
-    file = open('emoji.json')
+    file = open('./.git/hooks/emoji.json')
     d = json.load(file)
     p = c.split(' ')
     l = c.split('\n')[0]
