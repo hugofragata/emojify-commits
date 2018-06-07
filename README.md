@@ -28,4 +28,4 @@ Then just commit like you'd do usually, the emojis shall appear magically 🔮, 
 ![usage](https://i.imgur.com/WfV1G09.png "Usage")
 
 
-
+###### [License](https://github.com/me-shaon/GLWTPL)
