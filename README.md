@@ -15,17 +15,13 @@ Since it is a git hook you have to add it to a specific repo.
 Open a terminal in your local repository and run these commands:
 
 ```bash
-wget https://raw.githubusercontent.com/hugofragata/emojify-commits/master/emojify.py
-wget https://raw.githubusercontent.com/hugofragata/emojify-commits/master/emoji.json
-cp emoji.json ./.git/hooks/
-cp emojify.py ./.git/hooks/prepare-commit-msg
+wget https://raw.githubusercontent.com/hugofragata/emojify-commits/master/emojify.py -O ./.git/hooks/prepare-commit-msg
+wget https://raw.githubusercontent.com/hugofragata/emojify-commits/master/emoji.json -P ./.git/hooks/
 chmod +x ./.git/hooks/prepare-commit-msg
-rm emoji.json emojify.py
-
 ```
 
 Then just commit like you'd do usually, the emojis shall appear magically 🔮, like this.
 ![usage](https://i.imgur.com/WfV1G09.png "Usage")
 
 
-###### [License](https://github.com/me-shaon/GLWTPL)
+##### [License](https://github.com/me-shaon/GLWTPL)
