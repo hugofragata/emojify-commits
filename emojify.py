@@ -28,7 +28,7 @@ def emojify(c):
 def append_to_file():
     with open(sys.argv[1], 'r') as message_file:
         lines = message_file.readlines()
-        lines[0] = emojify(lines[0])
+        lines[0] = emojify(lines[0].encode('utf-8'))
     with open(sys.argv[1], 'w') as message_file:
         message_file.write(''.join(lines).encode('utf-8'))
 
