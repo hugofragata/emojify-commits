@@ -11,7 +11,7 @@ If the script is unable to find a matching emoji it chooses two random emojis, b
 
 ## 🤔 How do I make my commits full of emojis?
 
-Since it is a git hook you have to add it to a specific repo.
+Since it is a git hook you have to add it to a specific repo. Make sure you have Python 3+.
 Open a terminal, change directory to your local repository, and run this command:
 
 ```sh
