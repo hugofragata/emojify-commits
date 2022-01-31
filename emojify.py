@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import json
@@ -6,6 +6,7 @@ from random import random
 
 
 def emojify(c):
+    c = c.decode()
     file = open('./.git/hooks/emoji.json')
     d = json.load(file)
     p = c.split(' ')
@@ -30,7 +31,7 @@ def append_to_file():
         lines = message_file.readlines()
         lines[0] = emojify(lines[0].encode('utf-8'))
     with open(sys.argv[1], 'w') as message_file:
-        message_file.write(''.join(lines).encode('utf-8'))
+        message_file.write(''.join(lines))
 
 
 if __name__ == '__main__':
